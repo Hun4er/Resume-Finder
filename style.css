@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 50px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+}
+ .logo {
+      display: flex;
+      align-items: center;
+    }
+      .logo svg {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+       .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    
+.items{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    
+
+}
+ li{
+    color: #282828;
+    font-weight: 519;
+    
+}
+.navbar-links {
+      display: flex;
+      gap: 25px;
+    }
+    .navbar-links a {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+    }
+    .navbar-links a:hover {
+      color: #d32f2f;
+    }
+
+     .btn {
+      background: #e53935;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      
+    }
+    /* Hero Section */
+    .hero {
+      background: #fbd6d9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Left Content */
+    .hero-content {
+      max-width: 50%;
+    }
+    .hero-content h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #000;
+      line-height: 1.2;
+    }
+    .hero-content h1 span {
+      color: #e53935;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .hero-content p {
+      margin: 20px 0;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+    }
+    .btn {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .btn-primary {
+      background: #e53935;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #c62828;
+    }
+    .btn-secondary {
+      background: #d32f2f;
+      color: #fff;
+    }
+    .btn-secondary:hover {
+      background: #b71c1c;
+    }
+
+    /* Right Image */
+    .hero-image {
+      position: relative;
+      width: 45%;
+    }
+    .hero-image img {
+      width: 100%;
+      border-radius: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Background Circle */
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -150px;
+      top: 50px;
+      width: 600px;
+      height: 600px;
+      background: rgba(255, 192, 203, 0.5);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    /* Rating Card */
+    .rating-box {
+      position: absolute;
+      bottom: 150px;
+      left: -50px;
+      background: #fff;
+      padding: 12px 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-size: 16px;
+      font-weight: bold;
+      z-index: 3;
+    }
+    .rating-box span {
+      color: #4caf50;
+      font-size: 26px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .rating-box .stars {
+      color: #fbc02d;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+
+    /* Resume Count Card */
+    .resume-box {
+      position: absolute;
+      bottom: 20px;
+      right: -30px;
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 3;
+    }
+    .resume-box img {
+      width: 40px;
+      margin-right: 10px;
+    }
+    .resume-box strong {
+      display: block;
+      font-size: 18px;
+      color: #e53935;
+    }
+    .resume-box span {
+      font-size: 13px;
+      color: #333;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+      }
+      .hero-content {
+        max-width: 100%;
+        text-align: center;
+      }
+      .hero-image {
+        margin-top: 30px;
+        width: 80%;
+      }
+      .rating-box {
+        position: static;
+        margin: 15px auto;
+      }
+      .resume-box {
+        position: static;
+        margin: 10px auto;
+      }
+    }
+        /* Section Container */
+    .features-section {
+      text-align: center;
+      padding: 60px 80px;
+    }
+
+    /* Small Pill Heading */
+    .section-label {
+      display: inline-block;
+      background: #fbd6d9;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 8px 18px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    /* Main Heading */
+    .features-section h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #000;
+    }
+
+    /* Cards Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    /* Card */
+    .feature-card {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0px 2px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Card Image */
+    .feature-card img {
+      width: 100%;
+      max-width: 150px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    /* Title */
+    .feature-card h3 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 12px;
+    }
+
+    /* Description */
+    .feature-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
